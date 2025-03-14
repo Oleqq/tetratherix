@@ -1,0 +1,17 @@
+.application-partners__title {
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 24px;
+  text-align: center;
+  color: var(--black);
+}
+.application-partners__partner {
+  display: flex;
+  width: 100%;
+}
+.application-partners__partner img {
+  display: flex;
+  object-fit: cover;
+  width: 100%;
+}
+/*# sourceMappingURL=application-partners.css.map */

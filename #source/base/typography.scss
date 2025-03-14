@@ -1,0 +1,66 @@
+h1 {
+    font-family: var(--font-family);
+}
+
+h1.h1 {
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 65px;
+    @include adaptiveValue(font-size, 65px, 25px, 1440px, 467px);
+    line-height: 115%;
+    text-align: center;
+    color: var(--black);
+}
+
+h2.h1 {
+    font-family: var(--font-family);
+    font-weight: 500;
+    @include adaptiveValue(font-size, 65px, 25px, 1440px, 467px);
+    transition: .5s ease;
+}
+
+
+.section__title {
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 65px;
+    @include adaptiveValue(font-size, 65px, 20px, 1440px, 467px);
+
+    line-height: 115%;
+    text-align: center;
+
+    transition: .5s ease;
+    &-white {
+        color: var(--white);
+    }
+    &-black {
+        color: var(--black);
+    }
+}
+
+.section__subtitle {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 30px;
+    @include adaptiveValue(font-size, 30px, 16px, 1440px, 467px);
+    line-height: 133%;
+    text-align: center;
+    transition: .5s ease;
+
+    &-black {
+        color: var(--black);
+    }
+}
+
+.section__paragraph {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 24px;
+    @include adaptiveValue(font-size, 24px, 16px, 1440px, 467px);
+    line-height: 142%;
+    color: var(--black);  
+
+    &-black {
+        color: var(--black);
+    }
+}

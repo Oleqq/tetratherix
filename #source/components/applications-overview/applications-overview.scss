@@ -1,0 +1,85 @@
+.applications-overview {
+
+
+    .hero-nav {
+        top: 35%;
+        height: fit-content;
+        z-index: 10;
+    
+    }
+
+    h1.h1 {
+        @include adaptiveValue(margin-bottom, 60px, 40px, 1440px, 467px);
+
+        @include adaptiveValue(padding-right, 114px, 20px, 1440px, 467px);
+        @include adaptiveValue(padding-left, 114px, 20px, 1440px, 467px);
+
+        max-width: 1112px;
+        margin: 0 auto;
+    }
+
+    &__container {
+
+    }
+    &__inner-wrapper {
+        background: var(--light-grey);
+        @include adaptiveValue(padding-top, 60px, 40px, 1440px, 467px);
+        @include adaptiveValue(border-radius, 60px, 30px, 1440px, 467px);
+
+    }
+    &__wrapper {
+        position: relative;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        @include adaptiveValue(gap, 36px, 20px, 1440px, 467px);
+
+
+        
+
+        
+        @include adaptiveValue(padding-right, 114px, 20px, 1440px, 467px);
+        @include adaptiveValue(padding-bottom, 70px, 40px, 1440px, 467px);
+        @include adaptiveValue(padding-left, 114px, 20px, 1440px, 467px);
+
+        @media (max-width:676px) {
+            grid-template-columns: 1fr;
+        }
+    }
+    &__circle {
+        display: flex;
+        position: relative;
+    }
+    &__img {
+        display: flex;
+        width: 100%;
+
+        border-radius: 100%;
+
+        img {
+            display: flex;
+            width: 100%;
+            border-radius: 100%;
+            object-fit: cover;
+        }
+    }
+    &__title {
+        font-family: var(--font-family);
+        font-weight: 500;
+        font-size: 30px;
+        @include adaptiveValue(font-size, 30px, 20px, 1440px, 467px);
+        line-height: 133%;
+        text-align: center;
+        color: var(--white);    
+
+        position: absolute;
+        bottom: 45%;
+        @include adaptiveValue(bottom, 250px, 90px, 1440px, 676px);
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+
+        @media (max-width:676px) {
+            @include adaptiveValue(bottom, 250px, 120px, 676px, 467px);
+        }
+    }
+}

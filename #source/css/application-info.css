@@ -1,0 +1,13 @@
+.application-info--top h1 {
+  text-align: left;
+  max-width: 839px;
+}
+.application-info--bottom__img {
+  display: flex;
+  width: 100%;
+}
+.application-info--bottom__img img {
+  display: flex;
+  width: 100%;
+}
+/*# sourceMappingURL=application-info.css.map */

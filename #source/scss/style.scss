@@ -58,10 +58,49 @@
     // ~~~~~~~ Styles for index.html START ~~~~~~~
 
     
+    @import "../components/hero/hero";
 
+    @import "../components/redirect-banner/redirect-banner";
 
+    @import "../components/img-stats/img-stats";
+
+    
 
     // ~~~~~~~ Styles for index.html END ~~~~~~~
+/* ~~~ Styles for index.html ~~~ END ~~~ */
 
+
+
+/* ~~~ Styles for applications-overview.html */
+    // --- Styles for applications-overview START
+
+    @import "../components/applications-overview/applications-overview";
+
+    // --- Styles for applications-overview END
+/* ~~~ Styles for applications-overview.html ~~~ END ~~~ */
+
+
+
+/* ~~~ Styles for application.html */
+    // --- Styles for application START
+
+    @import "../components/application-info/application-info";
+
+    @import "../components/application-blogs/application-blogs";
+
+    @import "../components/application-partners/application-partners";
+
+    // --- Styles for application END
+/* ~~~ Styles for application.html ~~~ END ~~~ */
+
+
+
+/* ~~~ Styles for privacy-policy.html */
+    // --- Styles for privacy-policy START
+
+    @import "../components/privacy-policy/privacy-policy";
+
+    // --- Styles for privacy-policy END
+/* ~~~ Styles for privacy-policy.html ~~~ END ~~~ */
 
 

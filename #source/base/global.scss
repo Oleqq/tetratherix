@@ -1,7 +1,15 @@
 [class*="__container"] {
     padding: 0 100px;   
     margin: 0 auto; 
+    transition: .5s ease;
 
+    @media (min-width:1921px) {
+        padding: 0 400px;
+    }
+
+    @media (max-width:1660px) {
+        padding: 0 50px;
+    }
     @media (max-width:567px) {
         padding: 0 24px;
     }

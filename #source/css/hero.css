@@ -1,0 +1,32 @@
+.hero__bg {
+  display: flex;
+  width: 100%;
+}
+.hero__bg img {
+  display: flex;
+  width: 100%;
+  object-fit: cover;
+}
+.hero-nav__item {
+  border: 1px solid var(--white);
+  border-radius: 30px;
+  width: 703px;
+  height: 60px;
+}
+.hero-nav__item a {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 150%;
+  text-align: center;
+  color: var(--black);
+}
+.hero-nav__item.active a {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 150%;
+  text-align: center;
+  color: var(--white);
+}
+/*# sourceMappingURL=hero.css.map */

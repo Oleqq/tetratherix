@@ -1,0 +1,35 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title Document
+
+
+        link(rel="stylesheet", href="./css/swiper/swiper-bundle.min.css")
+        link(rel="stylesheet", href="./css/style.css")
+
+        //- fonts
+        link(rel="stylesheet", href="./fonts/fonts.css")
+
+    body 
+
+        //- Header
+        include ../components/header/header.pug
+
+      
+        
+        main 
+
+        //- applications-overview
+        include ../components/applications-overview/applications-overview.pug
+
+
+
+
+        //- Footer
+        include ../components/footer/footer.pug
+
+    script(src="./js/jquery-3.6.0.min.js") 
+    script(src="./js/swiper-bundle.min.js") 
+    script(src="./js/index.js") 

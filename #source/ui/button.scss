@@ -1,0 +1,61 @@
+.ui-button__primary {   
+    display: flex;
+    border: 1px solid var(--white);
+    border-radius: 30px;
+    padding: 8px;
+
+    @include adaptiveValue(padding, 8px, 4px, 1440px, 767px);
+
+    @media  (max-width:1439px) {
+        padding-right: 20px;
+    }
+
+    background: var(--white);
+
+    width: fit-content;
+
+    transition: .5s ease;
+
+    a {
+        display: flex;
+        align-items: center;
+        gap: 14px;
+        @include adaptiveValue(gap, 14px, 12px, 1440px, 767px);
+        font-family: var(--font-family);
+        font-weight: 400;
+        font-size: 20px;
+        @include adaptiveValue(font-size, 20px, 16px, 1440px, 767px);
+        line-height: 150%;
+        text-align: center;
+
+        transition: .5s ease;
+
+        .circle {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            transition: .5s ease;
+        }
+
+    }
+
+    &-black {
+        color: var(--black);
+
+
+        a {
+
+            .circle {
+                border-radius: 100%;
+                width: 44px;
+                @include adaptiveValue(width, 44px, 40px, 1440px, 767px);
+                height: 44px;
+                @include adaptiveValue(height, 44px, 40px, 1440px, 767px);
+                background-color: var(--black);
+
+
+            }
+        }
+    }
+}

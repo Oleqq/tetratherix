@@ -1,0 +1,111 @@
+.application-info {
+
+    @include adaptiveValue(padding-bottom, 60px, 40px, 1440px, 467px);
+
+    &__container {
+
+    }
+
+    &__wrapper {
+        background: var(--light-grey);
+        @include adaptiveValue(border-radius, 60px, 30px, 1440px, 467px);
+
+
+        
+    }
+
+    &__divider {
+        display: flex;
+
+        height: 1px;
+        width: 100%;
+        background-color: var(--black);
+        @include adaptiveValue(margin-bottom, 58px, 40px, 1440px, 467px);
+
+        @include adaptiveValue(padding-right, 76px, 20px, 1440px, 467px);
+        @include adaptiveValue(padding-left, 76px, 20px, 1440px, 467px);
+
+        div {
+
+        }
+    }
+
+    &--top {
+
+        @include adaptiveValue(padding-bottom, 58px, 40px, 1440px, 467px);
+
+        
+
+        // paddings
+        @include adaptiveValue(padding-top, 64px, 40px, 1440px, 467px);
+        @include adaptiveValue(padding-right, 76px, 20px, 1440px, 467px);
+        @include adaptiveValue(padding-left, 76px, 20px, 1440px, 467px);
+
+        h1 {
+            text-align: left;
+            max-width: 839px;
+        }
+    }
+
+    &--bottom {
+        display: flex;
+        flex-direction: column;
+
+        @include adaptiveValue(gap, 60px, 40px, 1440px, 467px);
+
+
+
+        &__text {
+            display: flex;
+            justify-content: space-between;
+
+                // paddings
+                @include adaptiveValue(padding-right, 76px, 20px, 1440px, 467px);
+                @include adaptiveValue(padding-left, 76px, 20px, 1440px, 467px);    
+
+                @media (max-width:1200px) {
+                    flex-direction: column-reverse;
+                    @include adaptiveValue(gap, 46px, 36px, 1200px, 467px);
+                }
+        }
+
+        &__left {
+
+            max-width: 810px;
+
+            h2.h1 {
+                @include adaptiveValue(margin-bottom, 35px, 40px, 1440px, 467px);
+            }
+
+        }
+        
+        &__right {
+
+            a.link {
+                font-family: var(--font-family);
+                font-weight: 500;
+                font-size: 24px;
+                @include adaptiveValue(font-size, 24px, 16px, 1440px, 467px);
+                text-align: right;
+                color: var(--black);     
+            }
+        }
+
+        &__img {
+            display: flex;
+            width: 100%;
+            @include adaptiveValue(border-radius, 60px, 30px, 1440px, 467px);
+
+            img {
+                @include adaptiveValue(border-radius, 60px, 30px, 1440px, 467px);
+                display: flex;
+                width: 100%;
+                object-fit: cover;
+
+                @media (max-width:767px) {
+                    aspect-ratio: 4/4;
+                }
+            }
+        }
+    }
+}

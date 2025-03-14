@@ -1,0 +1,48 @@
+.redirect-banner {
+
+    @include adaptiveValue(padding-bottom, 60px, 40px, 1440px, 467px);
+    &__container {
+
+    }
+    &__wrapper {
+        position: relative;
+    }
+    &__bg {
+        display: flex;
+        width: 100%;
+
+        border-radius: 60px;
+        max-height: 80dvh;
+
+        @media (max-width:767px) {
+            aspect-ratio: 4/4;
+        }
+
+        img {
+            border-radius: 60px;
+            @include adaptiveValue(border-radius, 60px, 30px, 1440px, 767px);
+            max-height: 80dvh;
+
+            display: flex;
+            width: 100%;
+            object-fit: cover;
+        }
+    }
+
+    .section__title {
+        max-width: 950px;
+        margin: 0 auto;
+        right: 0;
+        left: 0;
+        position: absolute;
+        top: 30%;
+    }
+    .ui-button__primary {
+        position: absolute;
+        margin: 0 auto;
+        right: 0;
+        left: 0;
+        bottom: 20%;
+    }
+    
+}

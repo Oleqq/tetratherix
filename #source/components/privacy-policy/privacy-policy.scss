@@ -1,0 +1,72 @@
+.privacy-policy {
+
+    &__container {
+
+    }
+    &__inner {
+
+
+        h1.h2 {
+            font-family: var(--font-family);
+            font-weight: 500;
+            font-size: 65px;
+            @include adaptiveValue(font-size, 65px, 25px, 1440px, 467px);
+            line-height: 115%;
+            color: var(--black);    
+
+            @include adaptiveValue(margin-bottom, 60px, 40px, 1440px, 467px);
+        }
+    }
+    &__wrapper {
+
+        
+        @include adaptiveValue(margin-left, 400px, 1px, 1440px, 991px);
+
+            font-family: var(--font-family);
+            color: var(--black);
+        
+            h1, h2, h3 {
+                font-weight: 600;
+                line-height: 125%;
+
+                margin-bottom: 24px;
+                @include adaptiveValue(margin-bottom, 22px, 12px, 1440px, 467px);
+                @include adaptiveValue(font-size, 24px, 16px, 1440px, 467px);
+            }
+        
+            h1 {
+                font-size: 24px;
+            }
+        
+            h2, h3 {
+                font-size: 22px;
+                @include adaptiveValue(font-size, 24px, 16px, 1440px, 467px);
+            }
+        
+            p, ul, li {
+                font-weight: 400;
+                font-size: 20px;
+                line-height: 1.25;
+                @include adaptiveValue(margin-bottom, 22px, 12px, 1440px, 467px);
+                @include adaptiveValue(font-size, 20px, 14px, 1440px, 467px);
+            }
+        
+            a {
+                font-weight: 400;
+                font-size: 20px;
+                text-decoration: underline;
+                text-decoration-skip-ink: none;
+                color: var(--black);
+            }
+        
+            i {
+                font-style: italic;
+            }
+        
+            strong {
+                font-weight: 600;
+            
+            }
+        
+    }
+}

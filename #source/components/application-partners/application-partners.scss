@@ -1,0 +1,55 @@
+.application-partners {
+
+    margin-bottom: 60px;
+    @include adaptiveValue(margin-bottom, 60px, 48px, 1440px, 467px);
+
+    @media (max-width:567px) {
+        overflow: hidden;
+    }
+
+    &__container {
+
+    }
+    &__inner {
+
+    }
+    &__title {
+        font-family: var(--font-family);
+        font-weight: 500;
+        font-size: 24px;
+        @include adaptiveValue(font-size, 24px, 14px, 1440px, 467px);
+        text-align: left;
+        color: var(--black);
+
+        margin-bottom: 32px;
+        @include adaptiveValue(margin-bottom, 32px, 32px, 1440px, 467px);
+    }
+    &__wrapper {
+        overflow: hidden;
+
+        @media (max-width:567px) {
+            overflow: visible;
+        }
+
+    }
+    &__slider {
+
+        .swiper-wrapper {
+
+            .swiper-slide {
+
+            }
+        }
+        
+    }
+    &__partner {
+        display: flex;
+        width: 100%;
+
+        img {
+            display: flex;
+            object-fit: cover;
+            width: 100%;
+        }
+    }
+}

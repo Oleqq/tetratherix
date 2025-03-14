@@ -1,0 +1,94 @@
+.application-blogs {
+
+    @include adaptiveValue(margin-bottom, 60px, 40px, 1440px, 467px);
+
+    &__container {
+
+    }
+    &__inner {
+        background: var(--light-grey);
+        @include adaptiveValue(padding-top, 63px, 20px, 1440px, 467px);
+        @include adaptiveValue(padding-right, 76px, 20px, 1440px, 467px);
+        @include adaptiveValue(padding-bottom, 63px, 20px, 1440px, 467px);
+        @include adaptiveValue(padding-left, 76px, 20px, 1440px, 467px);
+
+        @include adaptiveValue(border-radius, 60px, 30px, 1440px, 467px);
+
+        h2.h1 {
+            @include adaptiveValue(margin-bottom, 60px, 30px, 1440px, 467px);
+            max-width: 800px;
+        }
+    }
+    &__wrapper {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        @include adaptiveValue(column-gap, 30px, 20px, 1440px, 467px);
+        @include adaptiveValue(row-gap, 65px, 20px, 1440px, 467px);
+
+        @media (max-width:767px) {
+            grid-template-columns: 1fr;
+        }
+
+    }
+
+    &--card {
+        background: var(--white);
+        @include adaptiveValue(border-radius, 30px, 10px, 1440px, 467px);
+
+        
+
+        &__img {
+            display: flex;
+            width: 100%;
+
+            @include adaptiveValue(border-radius, 30px, 10px, 1440px, 467px);
+
+            position: relative;
+
+            @include adaptiveValue(margin-bottom, 55px, 22px, 1440px, 467px);
+
+            img {
+                width: 100%;
+                display: flex;
+                object-fit: cover;
+
+                @include adaptiveValue(border-radius, 30px, 10px, 1440px, 467px);
+            }
+
+            .play {
+                position: absolute;
+                right: 40px;
+                bottom: 40px;
+
+                display: none;
+            }
+        }
+
+        &__info {
+            padding-left: 76px;
+            padding-right: 76px;
+            @include adaptiveValue(padding-left, 76px, 20px, 1440px, 467px);
+            @include adaptiveValue(padding-right, 76px, 20px, 1440px, 467px);
+            @include adaptiveValue(padding-bottom, 51px, 20px, 1440px, 467px);
+        }
+
+        &__title {
+            font-family: var(--font-family);
+            font-weight: 600;
+            font-size: 24px;
+            @include adaptiveValue(font-size, 24px, 14px, 1440px, 467px);
+            color: var(--black);
+
+            margin-bottom: 20px;
+            @include adaptiveValue(margin-bottom, 20px, 20px, 1440px, 467px);
+        }
+        &__paragraph {
+            font-family: var(--font-family);
+            font-weight: 400;
+            font-size: 20px;
+            @include adaptiveValue(font-size, 20px, 14px, 1440px, 467px);
+            line-height: 150%;
+            color: var(--black);    
+        }
+    }
+}
