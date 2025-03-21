@@ -1,0 +1,11 @@
+.model-intro{
+    @include adaptiveValue(padding-bottom, 120px, 60px, 1440px, 467px);
+}
+
+.model-intro {
+    .section__subtitle {
+        @media  (max-width:767px) {
+            margin-bottom: 0;
+        }
+    }
+}

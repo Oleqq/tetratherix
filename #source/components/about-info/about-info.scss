@@ -1,0 +1,80 @@
+.about-info {
+
+    margin-bottom: 60px;
+    @include adaptiveValue(margin-bottom, 60px, 20px, 1440px, 467px);
+
+    overflow: hidden;
+
+    &__container {
+
+    }
+    &__wrapper {
+
+        
+        background: var(--light-grey);
+        border-radius: 60px;
+        @include adaptiveValue(border-radius, 60px, 30px, 1440px, 767px);
+        @include adaptiveValue(padding-top, 90px, 68px, 1440px, 767px);
+        @include adaptiveValue(padding-right, 114px, 20px, 1440px, 767px);
+        @include adaptiveValue(padding-bottom, 90px, 20px, 1440px, 767px);
+        @include adaptiveValue(padding-left, 114px, 20px, 1440px, 767px);
+
+        @media (max-width:768px) {
+            padding: 0;
+            border-radius: 0;
+            background-color: transparent;
+            width: 100%;
+            display: flex;
+        }
+
+        .swiper-wrapper {
+
+            display: flex;
+            
+            @media (min-width:769px) {
+                display: grid;
+                grid-template-columns: 1fr 1fr;    
+                column-gap: 30px;
+                row-gap: 80px;
+            }
+            @media (max-width:768px) {
+                width: 100%;
+            }
+
+            .swiper-slide {
+                @media (max-width:768px) {
+                    height: initial;
+                }
+            }
+        }
+    }
+    &-block {
+
+        @media (max-width:768px) {
+            background: var(--light-grey);
+            border-radius: 30px;
+            padding: 68px 20px 21px 20px;
+            height: 100%;
+        }
+
+        &__title  {
+            font-family: var(--font-family);
+            font-weight: 700;
+            font-size: 30px;
+            @include adaptiveValue(font-size, 30px, 16px, 1440px, 467px);
+            line-height: 113%;
+            color: var(--black);
+
+            margin-bottom: 18px;
+            @include adaptiveValue(margin-bottom, 18px, 24px, 1440px, 767px);
+        }
+        &__subtitle {
+            font-family: var(--font-family);
+            font-weight: 400;
+            font-size: 24px;
+            @include adaptiveValue(font-size, 24px, 14px, 1440px, 467px);
+            line-height: 113%;
+            color: var(--black);
+        }
+    }
+}

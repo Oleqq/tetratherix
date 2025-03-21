@@ -1,0 +1,116 @@
+.about-slider {
+
+    overflow: hidden;
+
+    margin-bottom: 80px;
+    @include adaptiveValue(margin-bottom, 80px, 40px, 1440px, 467px);
+
+    &__container {
+        padding: 0 164px;
+        @include adaptiveValue(padding-right, 164px, 60px, 1440px, 1024px);
+        @include adaptiveValue(padding-left, 164px, 60px, 1440px, 1024px);
+
+        @media (max-width:991px) {
+            @include adaptiveValue(padding-right, 60px, 20px, 991px, 467px);
+            @include adaptiveValue(padding-left, 60px, 20px, 991px, 467px);
+        }
+    }
+    &__inner {
+
+        margin-bottom: 80px;
+        @include adaptiveValue(margin-bottom, 80px, 30px, 1440px, 767px);
+
+
+        h2.h1 {
+            max-width: 656px;
+            
+        }
+    }
+
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+        align-items: flex-end;
+        gap: 144px;
+        @include adaptiveValue(gap, 144px, 72px, 1440px, 767px);
+
+        @media (max-width:676px) {
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 32px;
+        }
+
+        p {
+            font-family: var(--font-family);
+            font-weight: 400;
+            font-size: 24px;
+            @include adaptiveValue(font-size, 24px, 14px, 1440px, 467px);
+            line-height: 142%;
+            color: var(--black);
+
+
+        }
+    }
+
+
+    &__slider {
+        width: 60%;
+
+        &-caption {
+            max-width: 320px;
+
+           
+         
+            @media (max-width:767px) {
+                max-width: 100%;
+            }
+
+
+            display: none;
+
+            &.active {
+                display: block;
+            }
+        }
+
+
+        .swiper-wrapper {
+
+            .swiper-slide {
+                transition: .2s ease;
+                opacity: 0;
+
+                &-next {
+                    transition: .2s ease;
+                    opacity: 1;
+                }
+
+                &-active {
+                    transition: .2s ease;
+                    opacity: 1;
+                }
+
+                &-prev {
+                    transition: .2s ease;
+                    opacity: 0;
+                }
+            }
+        }
+    }
+
+    &__img {
+        display: flex;
+        width: 100%;
+        object-fit: cover;
+        border-radius: 60px;
+        @include adaptiveValue(border-radius, 60px, 30px, 1440px, 767px);
+        img {
+            display: flex;
+            width: 100%;
+            object-fit: cover;
+            border-radius: 60px;
+            @include adaptiveValue(border-radius, 60px, 30px, 1440px, 767px);
+        }
+    }
+}

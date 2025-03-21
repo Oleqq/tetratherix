@@ -1,0 +1,69 @@
+.text-banner {
+
+    
+    margin-bottom: 60px;
+    @include adaptiveValue(margin-bottom, 60px, 40px, 1440px, 467px);
+
+    &__container {
+
+    }
+    &__wrapper {
+        position: relative;
+    }
+    &__img {
+        display: flex;
+        width: 100%;
+        object-fit: cover;
+        border-radius: 60px;
+        @include adaptiveValue(border-radius, 60px, 30px, 1440px, 767px);
+
+        img {
+            display: flex;
+            width: 100%;
+            object-fit: cover;
+            border-radius: 60px;
+            @include adaptiveValue(border-radius, 60px, 30px, 1440px, 767px);
+
+            @media (max-width:991px) {
+                aspect-ratio: 4 / 4;
+            }
+        }
+    }
+
+    &__title {
+        position: absolute;
+
+        color: var(--white);
+        top: 123px;
+        @include adaptiveValue(top, 123px, 60px, 1440px, 467px);
+        left: 0;
+        right: 0;
+
+        padding: 0 20px;
+
+        max-width: 966px;
+        text-align: center;
+        margin: 0 auto;
+    }
+    &__subtitle {
+        position: absolute;
+
+        bottom: 122px;
+        @include adaptiveValue(bottom, 122px, 60px, 1440px, 467px);
+        left: 0;
+        right: 0;
+        
+        font-family: var(--font-family);
+        font-weight: 400;
+        font-size: 30px;
+        @include adaptiveValue(font-size, 30px, 14px, 1440px, 467px);
+        line-height: 133%;
+        text-align: center;
+        color: var(--white);
+
+        padding: 0 20px;
+
+        text-align: center;
+
+    }
+}

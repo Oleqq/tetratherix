@@ -1,0 +1,75 @@
+.model-slider {
+
+    overflow: hidden;
+    
+    margin-bottom: 80px;
+    @include adaptiveValue(margin-bottom, 80px, 40px, 1440px, 467px,);
+
+    &__container {
+        padding: 0 164px;
+        @include adaptiveValue(padding-left, 164px, 32px, 1440px, 467px);
+        @include adaptiveValue(padding-right, 164px, 32px, 1440px, 467px);
+    }
+    &__wrapper {
+
+    }
+    &__top {
+
+        margin-bottom: 80px;
+        @include adaptiveValue(margin-bottom, 80px, 40px, 1440px, 467px);
+
+        h2 {
+            margin-bottom: 72px;
+            @include adaptiveValue(margin-bottom, 72px, 40px, 1440px, 467px);
+        }
+    }
+    &__slider {
+        display: flex;
+        
+        .swiper-wrapper {
+            display: flex;
+           
+            .swiper-slide {
+                
+            }
+        }
+        
+    }
+    &-card {
+        background-color: var(--light-grey);
+        border-radius: 60px;
+        @include adaptiveValue(border-radius, 60px, 30px, 1440px, 767px);
+
+        padding-top: 236px;
+        padding-right: 64px;
+        padding-bottom: 60px;
+        padding-left: 60px;
+        @include adaptiveValue(padding-top, 236px, 44px, 1440px, 467px);
+        @include adaptiveValue(padding-right, 64px, 26px, 1440px, 467px);
+        @include adaptiveValue(padding-bottom,60px, 20px, 1440px, 467px);
+        @include adaptiveValue(padding-left, 60px, 20px, 1440px, 467px);
+
+        
+
+
+        &__title {
+            font-family: var(--font-family);
+            font-weight: 600;
+            font-size: 30px;
+            @include adaptiveValue(font-size, 30px, 14px, 1440px, 467px);
+            line-height: 133%;
+            color: var(--black);
+
+            margin-bottom: 35px;
+            @include adaptiveValue(margin-bottom, 35px, 30px, 1440px, 767px);
+        }
+        &__subtitle {
+            font-family: var(--font-family);
+            font-weight: 400;
+            font-size: 24px;
+            @include adaptiveValue(font-size, 24px, 14px, 1440px, 467px);
+            line-height: 142%;
+            color: var(--black);
+        }
+    }
+}

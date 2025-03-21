@@ -20,3 +20,16 @@ html {
     scroll-behavior: smooth;
 }
 
+
+
+main > section:first-child {
+    @media (max-width:467px) {
+        padding-top: 100px;
+    }
+}
+
+body {
+    &.no-scroll {
+        overflow: hidden;
+    }
+}

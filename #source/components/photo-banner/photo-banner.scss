@@ -1,0 +1,27 @@
+.photo-banner {
+
+    margin-bottom: 60px;
+    @include adaptiveValue(margin-bottom, 60px, 20px, 1440px, 467px);
+
+    &__container {
+
+    }
+    &__wrapper {
+
+    }
+    &__img {
+        display: flex;
+        width: 100%;
+        object-fit: cover;
+        border-radius: 60px;
+        @include adaptiveValue(border-radius, 60px, 30px, 1440px, 467px);
+
+        img {
+            display: flex;
+            width: 100%;
+            object-fit: cover;
+            border-radius: 60px;
+            @include adaptiveValue(border-radius, 60px, 30px, 1440px, 467px);
+        }
+    }
+}

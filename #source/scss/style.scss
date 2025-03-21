@@ -54,11 +54,15 @@
 
 
 
+
+
 /* ~~~~~~~ Styles for index.html ~~~~~~~ */
     // ~~~~~~~ Styles for index.html START ~~~~~~~
 
     
     @import "../components/hero/hero";
+
+    @import "../components/hero-secondary/hero-secondary";
 
     @import "../components/redirect-banner/redirect-banner";
 
@@ -102,5 +106,44 @@
 
     // --- Styles for privacy-policy END
 /* ~~~ Styles for privacy-policy.html ~~~ END ~~~ */
+
+
+/* ~~~ Styles for ttrx.html */
+    // --- Styles for ttrx START
+
+    @import "../components/model-intro/model-intro";
+
+    @import "../components/model-slider/model-slider";
+
+    @import "../components/text-banner/text-banner";
+
+    @import "../components/model-info/model-info";
+
+    @import "../components/model-partners/model-partners";
+
+    @import "../components/model-others/model-others";
+
+    // --- Styles for ttrx END
+/* ~~~ Styles for ttrx.html ~~~ END ~~~ */
+
+
+
+/* ~~~ Styles for about.html */
+    // --- Styles for about START
+
+    @import "../components/about-info/about-info";
+
+    @import "../components/photo-banner/photo-banner";
+
+    @import "../components/about-stats/about-stats";
+
+    @import "../components/about-team-slider/about-team-slider";
+
+    @import "../components/about-slider/about-slider";
+
+    // --- Styles for about END
+/* ~~~ Styles for about.html ~~~ END ~~~ */
+
+
 
 

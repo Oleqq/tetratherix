@@ -1,0 +1,57 @@
+.model-info {
+
+    margin-bottom: 120px;
+    @include adaptiveValue(margin-bottom, 120px, 40px, 1440px, 467px);
+
+    &__container {
+
+    }
+    &__wrapper {
+        background: var(--light-grey);
+        @include adaptiveValue(border-radius, 60px, 30px, 1440px, 767px);
+
+        padding-top: 60px;
+
+        @include adaptiveValue(padding-top, 60px, 40px, 1440px, 467px);
+    }
+    &__title {
+        margin-bottom: 70px;
+        @include adaptiveValue(margin-bottom, 70px, 40px, 1440px, 467px);
+    }
+    &__top {
+        padding-left: 110px;
+        padding-right: 110px;
+        @include adaptiveValue(padding-left, 110px, 22px, 1440px, 467px);
+        @include adaptiveValue(padding-right, 110px, 22px, 1440px, 467px);
+
+        margin-bottom: 65px;
+        @include adaptiveValue(margin-bottom, 65px, 40px, 1440px, 467px);
+    }
+    &__img {
+        display: flex;
+        width: 100%;
+        object-fit: cover;
+        border-radius: 60px;
+
+        @include adaptiveValue(border-radius, 60px, 30px, 1440px, 767px);
+        @include adaptiveValue(padding-left, 110px, 20px, 1440px, 767px);
+        @include adaptiveValue(padding-right, 110px, 20px, 1440px, 767px);
+        @include adaptiveValue(padding-bottom, 60px, 20px, 1440px, 767px);
+
+        @media (max-width:767px) {
+            padding-left: 0;
+            padding-right: 0;
+            padding-bottom: 0;
+        }
+
+        img {
+            display: flex;
+            width: 100%;
+            object-fit: cover;
+            border-radius: 60px;
+            @include adaptiveValue(border-radius, 60px, 30px, 1440px, 767px);
+
+            
+        }
+    }
+}

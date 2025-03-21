@@ -1,0 +1,155 @@
+section.team-slider-about
+    .container.team-slider-about__container
+        h2.h1 We have a powerful combination where our skillsets represent not a division of labour, but a multiplication of impact
+        
+        .team-slider-about__tabs
+            .swiper-wrapper
+                .swiper-slide
+                    button.team-slider-about__tab.active(data-target="team-1") Leadership Team
+                .swiper-slide
+                    button.team-slider-about__tab(data-target="team-2") Board of Directors
+                .swiper-slide
+                    button.team-slider-about__tab(data-target="team-3") Commercial Advisors
+                .swiper-slide
+                    button.team-slider-about__tab(data-target="team-4") Internal RandD
+
+            .custom-scrollbar
+                .custom-scroll
+
+        .team-slider-about__swipers
+            // Team 1 Slider
+            .swiper.team-slider-about__swiper#team-1
+                .swiper-wrapper
+                    .swiper-slide
+                        .team-member(data-target="#team-member-bio-1")
+                            img(src="img/DSC_0958.jpg", alt="Will Knox")
+                            h3 Will Knox
+                            p CEO
+                    .swiper-slide
+                        .team-member(data-target="#team-member-bio-2")
+                            img(src="img/DSC_0958.jpg", alt="Dr Ali Fathi")
+                            h3 Dr Ali Fathi
+                            p Founder & CTO
+                    .swiper-slide
+                        .team-member(data-target="#team-member-bio-3")
+                            img(src="img/DSC_0958.jpg", alt="Terence Abrams")
+                            h3 Terence Abrams
+                            p Founder & COO
+                    .swiper-slide
+                        .team-member(data-target="#team-member-bio-4")
+                            img(src="img/DSC_0958.jpg", alt="Cherie Beach")
+                            h3 Cherie Beach
+                            p CFO & Secretary
+
+                .custom-scrollbar
+                    div#team-1-scroll.custom-scroll
+
+                // Bios for Team 1
+                .team-member__bio#team-member-bio-1.hidden
+                    p Will Knox brings over 15 years of experience in commercializing MedTech innovations. Having previously led successful ventures in the healthcare industry, he is passionate about driving forward the company’s mission to revolutionize the MedTech landscape. His leadership and vision are essential to achieving global success for Tetratherix.
+                    .team-member__bio-links
+                        a(href="#") LinkedIn
+
+                .team-member__bio#team-member-bio-2.hidden
+                    p Dr. Ali Fathi is the founder and CTO, with extensive experience in technology development and innovation in the MedTech sector. His expertise in cutting-edge technologies and his entrepreneurial spirit have been pivotal in shaping the company’s technical strategies and vision for the future.
+                    .team-member__bio-links
+                        a(href="#") LinkedIn
+
+                .team-member__bio#team-member-bio-3.hidden
+                    p Terence Abrams co-founded the company and serves as COO, overseeing operations and strategic initiatives. His background in operations management and leadership in high-growth startups enables him to effectively drive the company's operational excellence and scalability.
+                    .team-member__bio-links
+                        a(href="#") LinkedIn
+
+                .team-member__bio#team-member-bio-4.hidden
+                    p Cherie Beach is the CFO and Secretary, bringing over 20 years of experience in financial management and corporate governance. She has successfully led financial strategy for numerous multinational companies, and her deep expertise ensures the financial stability and growth of Tetratherix.
+                    .team-member__bio-links
+                        a(href="#") LinkedIn
+
+            // Team 2 Slider (hidden initially)
+            .swiper.team-slider-about__swiper.hidden#team-2
+                .swiper-wrapper
+                    .swiper-slide
+                        .team-member(data-target="#team-member-bio-5")
+                            img(src="img/DSC_0958.jpg", alt="Member 1")
+                            h3 Member 1
+                            p Position
+                    .swiper-slide
+                        .team-member(data-target="#team-member-bio-6")
+                            img(src="img/DSC_0958.jpg", alt="Member 2")
+                            h3 Member 2
+                            p Position
+                    .swiper-slide
+                        .team-member(data-target="#team-member-bio-7")
+                            img(src="img/DSC_0958.jpg", alt="Member 3")
+                            h3 Member 3
+                            p Position
+
+                .custom-scrollbar
+                    div#team-2-scroll.custom-scroll
+
+                // Bios for Team 2
+                .team-member__bio#team-member-bio-5.hidden
+                    p Member 1 is a highly skilled professional with years of experience in their respective field. Their strategic thinking and problem-solving abilities have been instrumental in shaping the company’s direction. They play a key role in decision-making and leadership within the company.
+                    .team-member__bio-links
+                        a(href="#") LinkedIn
+
+                .team-member__bio#team-member-bio-6.hidden
+                    p Member 2 has a proven track record in their domain, bringing invaluable expertise to the team. Their commitment to innovation and excellence ensures that Tetratherix remains at the forefront of the MedTech industry.
+                    .team-member__bio-links
+                        a(href="#") LinkedIn
+
+                .team-member__bio#team-member-bio-7.hidden
+                    p Member 3 is an experienced professional whose skills in management and development have been crucial in Tetratherix’s rapid growth. Their leadership and insight into market trends have enabled the company to develop breakthrough solutions for the future.
+                    .team-member__bio-links
+                        a(href="#") LinkedIn
+
+            // Team 3 Slider (hidden initially)
+            .swiper.team-slider-about__swiper.hidden#team-3
+                .swiper-wrapper
+                    .swiper-slide
+                        .team-member(data-target="#team-member-bio-11")
+                            img(src="img/DSC_0958.jpg", alt="Advisor 1")
+                            h3 Advisor 1
+                            p Position
+                    .swiper-slide
+                        .team-member(data-target="#team-member-bio-12")
+                            img(src="img/DSC_0958.jpg", alt="Advisor 2")
+                            h3 Advisor 2
+                            p Position
+
+                .custom-scrollbar
+                    div#team-3-scroll.custom-scroll
+
+                // Bios for Team 3
+                .team-member__bio#team-member-bio-11.hidden
+                    p Advisor 1 is a seasoned expert with decades of experience in the MedTech and healthcare industries. Their deep knowledge of market trends, regulations, and innovations provides Tetratherix with invaluable guidance as we navigate the complexities of the global MedTech landscape.
+                    .team-member__bio-links
+                        a(href="#") LinkedIn
+
+                .team-member__bio#team-member-bio-12.hidden
+                    p Advisor 2 has been at the forefront of industry developments, providing critical strategic insights and advisory to high-growth companies in the MedTech space. Their expertise ensures that Tetratherix stays on track to meet its long-term objectives.
+                    .team-member__bio-links
+                        a(href="#") LinkedIn
+
+            // Team 4 Slider (hidden initially)
+            .swiper.team-slider-about__swiper.hidden#team-4
+                .swiper-wrapper
+                    .swiper-slide
+                        .team-member(data-target="#team-member-bio-17")
+                            img(src="img/DSC_0958.jpg", alt="Researcher 1")
+                            h3 Researcher 1
+                            p Position
+                    .swiper-slide
+                        .team-member(data-target="#team-member-bio-18")
+                            img(src="img/DSC_0958.jpg", alt="Researcher 2")
+                            h3 Researcher 2
+                            p Position
+
+                .custom-scrollbar
+                    div#team-4-scroll.custom-scroll
+
+                // Bios for Team 4
+                .team-member__bio#team-member-bio-17.hidden
+                    p Researcher 1 is a distinguished academic with a focus on advancing innovative medical technologies. Their work in the MedTech research space has been critical to the development of cutting-edge solutions that are helping to shape the future of healthcare.
+                    .team-member__bio-links
+                        a(href="#") LinkedIn

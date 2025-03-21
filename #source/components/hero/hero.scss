@@ -56,19 +56,34 @@
     }
 
     &-nav {
-        position: absolute;
+        position: fixed;
         right: 0;
         left: 0;
         margin: 0 auto;
         bottom: 60px;
-        @include adaptiveValue(bottom, 60px, 20px, 1440px, 767px);
         display: flex;
         justify-content: center;
 
         transition: .5s ease;
 
+        z-index: 100;
+
+
+
         @media (max-width:676px) {
             display: none;
+        }
+
+        &.active {
+            transition: 1s ease;
+            position: fixed;
+            bottom: 60px;
+        }
+
+        &.active {
+            transition: 1s ease;
+            position: fixed;
+            bottom: 60px;
         }
 
         &__list {

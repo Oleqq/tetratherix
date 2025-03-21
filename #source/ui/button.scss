@@ -58,4 +58,43 @@
             }
         }
     }
+
+    &-blue {
+        color: var(--colbolt-blue);
+        border: 1px solid var(--colbolt-blue);
+
+        a {
+
+            .circle {
+                border-radius: 100%;
+                width: 44px;
+                @include adaptiveValue(width, 44px, 40px, 1440px, 767px);
+                height: 44px;
+                @include adaptiveValue(height, 44px, 40px, 1440px, 767px);
+                background-color:var(--colbolt-blue);
+
+
+            }
+        }
+    }
+
+    &-transparent {
+        color: var(--white);
+        border: 1px solid var(--white);
+        
+
+        a {
+
+            .circle {
+                border-radius: 100%;
+                width: 44px;
+                @include adaptiveValue(width, 44px, 40px, 1440px, 767px);
+                height: 44px;
+                @include adaptiveValue(height, 44px, 40px, 1440px, 767px);
+                background-color:var(--white);
+
+
+            }
+        }
+    }
 }

@@ -1,5 +1,8 @@
 .applications-overview {
 
+    margin-bottom: 60px;
+    @include adaptiveValue(margin-bottom, 60px, 40px, 1440px, 467px);
+
 
     .hero-nav {
         top: 35%;

@@ -1,0 +1,327 @@
+.team-slider-about {
+
+    overflow: hidden;
+
+    margin-bottom: 120px;
+    @include adaptiveValue(margin-bottom, 120px, 40px, 1440px, 467px);
+
+    h2.h1 {
+
+        margin-bottom: 60px;
+        @include adaptiveValue(margin-bottom, 60px, 40px, 1440px, 467px);
+    }
+
+    &__tabs {
+
+        padding-bottom: 40px;
+        margin-bottom: 60px;
+        @include adaptiveValue(margin-bottom, 60px, 40px, 1440px, 467px);
+
+        @media (max-width:467px) {
+            padding-bottom: 0;
+        }
+
+
+        .swiper-wrapper {
+            display: flex;
+            // gap: 30px;
+            // @include adaptiveValue(gap, 30px, 20px, 1440px, 467px);  
+            
+            @media (max-width:467px) {
+                flex-direction: column;
+                gap: 20px;
+                padding-bottom: 0;
+            }
+        }
+
+    }
+    &__tab {
+        font-family: var(--font-family);
+        font-weight: 400;
+        font-size: 20px;
+        @include adaptiveValue(font-size, 20px, 16px, 1440px, 467px);
+        line-height: 150%;
+        text-align: center;
+        color: var(--colbolt-blue);
+        background: var(--white);
+        border: 1px solid var(--colbolt-blue);
+
+        transition: .2s ease;
+
+        cursor: pointer;
+        border-radius: 30px;
+
+        padding: 14px 24px;
+        
+        width: 100%;
+        @media (max-width:1440px) {
+            width: 100%;
+        }
+        @media (max-width:1240px) {
+            width: 100%;
+            padding: 14px;
+        }
+
+        &.active {
+            color: var(--white);
+            background: var(--colbolt-blue);
+            border: 1px solid var(--colbolt-blue);
+        }
+
+        &:hover {
+            color: var(--white);
+            background: var(--colbolt-blue);
+            border: 1px solid var(--colbolt-blue);
+        }
+
+        &:focus-visible {
+            transition: .2s ease;
+            transform: scale(.9);
+        }
+        &:active {
+            transition: .2s ease;
+            transform: scale(.9);
+        }
+    }
+
+    &__swiper {
+
+        &.hidden {
+            display: none;
+        }
+
+        padding-bottom: 30px;
+        margin-bottom: 40px;
+
+       
+    }
+
+    .team-swiper {
+        display: block;
+
+        &.hidden {
+            display: none;
+        }
+    }
+
+    .team-member {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        border-radius: 30px;
+
+        cursor:pointer;
+
+        transition: .4s ease;
+
+        &:active {
+            transition: .2s ease;
+            transform: scale(.95);
+        }
+
+        h3 {
+            font-family: var(--font-family);
+            font-weight: 600;
+            font-size: 24px;
+            @include adaptiveValue(font-size, 24px, 16px, 1440px, 467px);
+            color: var(--black);
+
+            margin-bottom: 12px;
+            @include adaptiveValue(margin-bottom, 12px, 10px, 1440px, 467px);
+        }
+        p {
+            font-family: var(--font-family);
+            font-weight: 400;
+            font-size: 24px;
+            @include adaptiveValue(font-size, 24px, 16px, 1440px, 467px);
+            text-transform: capitalize;
+            color: var(--black);
+        }
+
+        img {
+            display: flex;
+            width: 100%;
+            border-radius: 30px;
+
+            margin-bottom: 30px;
+            @include adaptiveValue(margin-bottom, 30px, 20px, 1440px, 467px);
+            
+        }
+
+
+        &__bio {
+            display: flex;
+            flex-direction: column;
+            gap: 40px;
+            @include adaptiveValue(gap, 40px, 20px, 1440px, 467px);
+
+            margin-bottom: 40px;
+
+            &.hidden {
+                display: none;
+                margin-bottom: 0px;
+            }
+
+            p {
+                font-family: var(--font-family);
+                font-weight: 400;
+                font-size: 24px;
+                @include adaptiveValue(font-size, 24px, 14px, 1440px, 467px);
+                line-height: 142%;
+                color: var(--black);
+
+                margin-top: 60px;
+                @include adaptiveValue(margin-top, 60px, 40px, 1440px, 467px);
+
+            }
+
+            a {
+
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                
+
+                font-family: var(--font-family);
+                font-weight: 400;
+                font-size: 20px;
+                @include adaptiveValue(font-size, 20px, 16px, 1440px, 467px);
+                line-height: 150%;
+                text-align: center;
+                color: var(--colbolt-blue);
+                background: var(--white);
+                border: 1px solid var(--colbolt-blue);
+        
+                transition: .2s ease;
+        
+                cursor: pointer;
+                border-radius: 30px;
+        
+                padding: 14px 24px;
+
+                text-decoration: none;
+                
+                max-width: 300px;
+                @media (max-width:1440px) {
+                   
+                }
+                @media (max-width:1240px) {
+                    width: 100%;
+                    padding: 14px;
+                }
+        
+                &.active {
+                    color: var(--white);
+                    background: var(--colbolt-blue);
+                    border: 1px solid var(--colbolt-blue);
+                }
+        
+                &:hover {
+                    color: var(--white);
+                    background: var(--colbolt-blue);
+                    border: 1px solid var(--colbolt-blue);
+                }
+        
+                &:focus-visible {
+                    transition: .2s ease;
+                    transform: scale(.9);
+                }
+                &:active {
+                    transition: .2s ease;
+                    transform: scale(.9);
+                }
+            }
+        }
+    }
+}
+
+
+// @media (min-width:468px) {
+
+//     // scroll thumbs
+//     .team-slider-about__tabs {
+//         overflow-x: auto;  
+//         overflow-y: hidden;  
+//         max-width: 100%; 
+//         white-space: nowrap;  
+//         height: 100px;  
+//         padding-bottom: 10px; 
+//     }
+    
+//     .team-slider-about__tabs::-webkit-scrollbar {
+//         height: 8px;  
+//     }
+    
+//     .team-slider-about__tabs::-webkit-scrollbar-track {
+//         background: var(--light-grey);  
+//     }
+    
+//     .team-slider-about__tabs::-webkit-scrollbar-thumb {
+//         background: var(--colbolt-blue);  
+//         border-radius: 10px;  
+//     }
+    
+//     .team-slider-about__tabs::-webkit-scrollbar-thumb:hover {
+//         background: var(--colbolt-blue);  
+//     }
+
+
+//     // scroll members
+//     .team-slider-about__swiper {
+//         overflow-x: auto;  /* Горизонтальный скролл */
+//         overflow-y: hidden;
+//         max-width: 100%;
+//         white-space: nowrap;
+    
+//     }
+    
+//     .team-slider-about__swiper::-webkit-scrollbar {
+//         height: 8px;  /* Высота скролл-бара */
+//     }
+    
+//     .team-slider-about__swiper::-webkit-scrollbar-track {
+//         background: var(--light-grey);  /* Фон скролл-бара */
+//     }
+    
+//     .team-slider-about__swiper::-webkit-scrollbar-thumb {
+//         background: var(--colbolt-blue);  /* Ползунок */
+//         border-radius: 10px;
+//     }
+    
+//     .team-slider-about__swiper::-webkit-scrollbar-thumb:hover {
+//         background: var(--colbolt-blue);
+//     }
+    
+    
+// }
+
+
+
+.team-slider-about__tabs {
+    position: relative;
+    overflow: hidden; 
+    width: 100%;
+}
+
+.custom-scrollbar {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 8px;
+    background: var(--light-grey); /* Цвет фона для скроллбара */
+    border-radius: 10px;
+    opacity: 0.8;
+}
+
+.custom-scroll {
+    height: 100%;
+    background: var(--colbolt-blue); /* Цвет ползунка */
+    border-radius: 10px;
+    transition: all 0.3s ease;
+    width: 600px;
+}
+
+.team-slider-about__tabs:hover .custom-scroll {
+    background: var(--colbolt-blue); /* Цвет при наведении */
+}

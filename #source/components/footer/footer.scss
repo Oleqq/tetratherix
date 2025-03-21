@@ -1,0 +1,113 @@
+.footer {
+
+    padding-bottom: 60px;
+    @include adaptiveValue(padding-bottom, 60px, 32px, 1440px, 467px);
+
+    &__container {
+
+
+    }
+    &__wrapper {
+
+    }
+    &__top {
+        margin-bottom: 48px;
+        @include adaptiveValue(margin-bottom, 48px, 44px, 1440px, 467px);
+
+        a {
+            display: flex;
+            transition: .2s ease;
+            @media (max-width:467px) {
+                max-width: 190px;
+            }
+        }
+    }
+    &__bottom {
+        display: flex;
+        justify-content: space-between;
+
+        @media (max-width:991px) {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+
+            .footer__col:first-child {
+                grid-column: 1 / -1;
+            }
+            
+        }
+        
+    }
+    &__col {
+
+        .address-block {
+            margin-bottom: 30px;
+            @include adaptiveValue(margin-bottom, 30px, 22px, 1440px, 467px);
+        }
+
+        .address {
+            font-family: var(--font-family);
+            font-weight: 400;
+            font-size: 16px;
+            @include adaptiveValue(font-size, 16px, 14px, 1440px, 467px);
+            line-height: 162%;
+            color: var(--black);    
+        }
+
+        .siteby {
+            font-family: var(--font-family);
+            font-weight: 400;
+            font-size: 16px;
+            @include adaptiveValue(font-size, 16px, 14px, 1440px, 467px);
+            line-height: 162%;
+            text-align: right;
+            color: var(--black);    
+
+            text-decoration: none;
+        }
+
+        &:last-child {
+            display: flex;
+            align-items: flex-end;
+            
+            flex-direction: column;
+            justify-content: space-between;
+
+            @media (max-width:991px) {
+                align-items: flex-start;
+                gap: 38px;
+                margin-top: 30px;
+            }
+        }
+
+        &:nth-child(2) {
+            @media (max-width:467px) {
+                max-width: 200px;
+            }
+        }
+        &:nth-child(3) {
+            @media (max-width:467px) {
+                margin-left: -56px;
+            }
+        }
+    }
+
+    &__nav {
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+        @include adaptiveValue(gap, 24px, 26px, 1440px, 467px);
+        li {
+
+            a {
+                font-family: var(--font-family);
+                font-weight: 400;
+                font-size: 20px;
+                @include adaptiveValue(font-size, 20px, 16px, 1440px, 467px);
+                line-height: 150%;
+                color: var(--black);
+                
+                text-decoration: none;
+            }
+        }
+    }
+}

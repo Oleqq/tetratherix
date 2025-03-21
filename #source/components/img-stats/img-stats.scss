@@ -11,8 +11,9 @@
         
         background: var(--light-grey);
         border-radius: 60px;
-        @include adaptiveValue(padding-top, 60px, 40px, 1440px);
-        @include adaptiveValue(padding-bottom, 60px, 40px, 1440px);
+        @include adaptiveValue(border-radius, 60px, 30px, 1440px, 467px);
+        @include adaptiveValue(padding-top, 60px, 40px, 1440px, 467px);
+        @include adaptiveValue(padding-bottom, 60px, 40px, 1440px, 467px);
 
         transition: .5s ease;
 
