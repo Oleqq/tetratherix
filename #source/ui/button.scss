@@ -1,20 +1,20 @@
 .ui-button__primary {   
     display: flex;
-    border: 1px solid var(--white);
+    
     border-radius: 30px;
-    padding: 8px;
+   
 
-    @include adaptiveValue(padding, 8px, 4px, 1440px, 767px);
+    
 
-    @media  (max-width:1439px) {
-        padding-right: 20px;
-    }
+   
 
     background: var(--white);
 
     width: fit-content;
 
-    transition: .5s ease;
+    transition: .2s ease;
+
+    cursor: pointer;
 
     a {
         display: flex;
@@ -28,24 +28,30 @@
         line-height: 150%;
         text-align: center;
 
-        transition: .5s ease;
+        transition: .2s ease;
+
+        padding-right: 20px;
+
+        padding: 8px 20px 8px 8px;
+
+        border-radius: 30px;
 
         .circle {
             display: flex;
             justify-content: center;
             align-items: center;
 
-            transition: .5s ease;
+            transition: .2s ease;
         }
 
     }
 
     &-black {
         color: var(--black);
-
+        transition: .2s ease;
 
         a {
-
+            transition: .2s ease;
             .circle {
                 border-radius: 100%;
                 width: 44px;
@@ -54,7 +60,30 @@
                 @include adaptiveValue(height, 44px, 40px, 1440px, 767px);
                 background-color: var(--black);
 
+                svg {
+                    transition: .2s ease;
+                    path {
+                        transition: .2s ease;
+                    }
+                }
+            }
+            &:hover {
+                transition: .2s ease;
+                background-color: var(--black);
+                color: var(--white);
 
+                .cirle {
+                    transition: .2s ease;
+
+                    svg {
+                        transition: .2s ease;
+
+                        path {
+                            transition: .2s ease;
+                            stroke: var(--white);
+                        }
+                    }
+                }
             }
         }
     }
@@ -63,8 +92,10 @@
         color: var(--colbolt-blue);
         border: 1px solid var(--colbolt-blue);
 
-        a {
+        transition: .2s ease;
 
+        a {
+            transition: .2s ease;
             .circle {
                 border-radius: 100%;
                 width: 44px;
@@ -73,7 +104,31 @@
                 @include adaptiveValue(height, 44px, 40px, 1440px, 767px);
                 background-color:var(--colbolt-blue);
 
+                transition: .2s ease;
 
+                svg {
+                    transition: .2s ease;
+                    path {
+                        transition: .2s ease;
+                    }
+                }
+
+            }
+        }
+
+        &:hover {
+            transition: .2s ease;
+            color: var(--white);
+            background-color: var(--colbolt-blue);
+
+            .circle {
+                background-color:  var(--white);
+
+                svg {
+                    path {
+                        stroke: var(--colbolt-blue);
+                    }
+                }
             }
         }
     }
@@ -81,10 +136,10 @@
     &-transparent {
         color: var(--white);
         border: 1px solid var(--white);
-        
+        transition: .2s ease;
 
         a {
-
+            transition: .2s ease;
             .circle {
                 border-radius: 100%;
                 width: 44px;
@@ -92,8 +147,32 @@
                 height: 44px;
                 @include adaptiveValue(height, 44px, 40px, 1440px, 767px);
                 background-color:var(--white);
+                transition: .2s ease;
 
+                svg {
+                    transition: .2s ease;
+                    
+                    path {
+                        transition: .2s ease;
+                    }
+                }
 
+            }
+        }
+
+        &:hover {
+            transition: .2s ease;
+            
+            .circle {
+                transition: .2s ease;
+
+                svg {
+                    transition: .2s ease;
+
+                    path {
+                        transition: .2s ease;
+                    }
+                }
             }
         }
     }

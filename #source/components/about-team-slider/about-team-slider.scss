@@ -1,6 +1,5 @@
 .team-slider-about {
 
-    overflow: hidden;
 
     margin-bottom: 120px;
     @include adaptiveValue(margin-bottom, 120px, 40px, 1440px, 467px);
@@ -299,7 +298,7 @@
 
 .team-slider-about__tabs {
     position: relative;
-    overflow: hidden; 
+
     width: 100%;
 }
 

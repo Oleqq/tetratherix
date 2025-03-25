@@ -1,6 +1,9 @@
 .model-others {
 
     overflow-x: hidden;
+    
+    margin-bottom: 120px;
+    @include adaptiveValue(margin-bottom, 120px, 40px, 1440px, 467px);
 
     &__container {
         padding: 0 164px;
@@ -62,11 +65,13 @@
     &__img {
         display: flex;
     
-        width: 50%;
-        max-width: 50%;
+        width: 100%;
+        max-width: 550px;
         object-fit: cover;
         border-radius: 60px;
         @include adaptiveValue(border-radius, 60px, 30px, 1440px, 467px);
+
+        max-height: 702px;
 
         @media (max-width:767px) {
             max-width: 100%;

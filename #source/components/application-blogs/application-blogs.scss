@@ -88,7 +88,33 @@
             font-size: 20px;
             @include adaptiveValue(font-size, 20px, 14px, 1440px, 467px);
             line-height: 150%;
-            color: var(--black);    
+            color: var(--black);  
+            
+            
+        
         }
     }
+}
+
+
+.application-blogs--card__paragraph {
+    max-height: 400px; 
+    overflow-y: auto;
+    padding-right: 10px; 
+}
+
+
+.application-blogs--card__paragraph::-webkit-scrollbar {
+    width: 4px; 
+}
+
+.application-blogs--card__paragraph::-webkit-scrollbar-thumb {
+    background-color: rgba(215, 210, 245, 1); 
+    border-radius: 10px;
+    
+}
+
+.application-blogs--card__paragraph::-webkit-scrollbar-track {
+    background-color: rgba(248, 248, 248, 1);
+    border-radius: 10px; 
 }
